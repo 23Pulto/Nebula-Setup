@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula CS2 | External Setup Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav>
+      <div class="nav-left">
+        <img src="Images/Logo.png" alt="Nebula Logo" class="logo-img">
+        <div class="logo">Nebula Services</div>
+      </div>
+      <div>
+        <a href="https://discord.gg/H3KWyw5mBy" target="_blank" class="discord-link" style="margin-right: 15px;">
+          <img src="Images/Discord logo.png" alt="Join Discord">
+        </a>
+        <a href="index.html" class="nav-link">Back to Hub</a>
+      </div>
+    </nav>
+
+
+    <div class="hero-content">
+      <p class="tag">Tutorial</p>
+      <h1>Setting Up <span>CS2 External</span></h1>
+      <p>A professional, step-by-step guide to installing and configuring the Nebula external tool for Counter-Strike 2.
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="#setup">Start Setup</a>
+        <a class="btn btn-secondary" href="https://github.com/23Pulto/Cs2-External">GitHub Repo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="setup">
+    <section class="section-header">
+      <h2>Installation Process</h2>
+      <p>Follow these steps in order to ensure maximum compatibility and performance.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">01</div>
+      <h2>Download & Extract</h2>
+      <p>Get the latest release from the official repository. Once downloaded, extract the ZIP file to a dedicated
+        folder on your desktop.</p>
+      <div class="code-block">
+        <code id="release-url">https://github.com/23Pulto/Cs2-External/releases</code>
+        <button class="copy-btn" onclick="copyText('release-url')">Copy Link</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">02</div>
+      <h2>Security Exceptions</h2>
+      <p>To prevent Windows Defender from blocking the driver mapping, add the extracted folder to your Virus & Threat
+        Protection exclusions or disable real-time protection temporarily.</p>
+      <p><em>Settings > Security > Virus & threat protection > Manage settings > Add or remove exclusions.</em></p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">03</div>
+      <h2>Install Dependencies</h2>
+      <p>Ensure you have the latest Visual C++ Redistributable packages installed. This is required for the user-mode
+        GUI and kernel communication.</p>
+      <div class="code-block">
+        <code>Visual C++ Redistributable 2015-2022</code>
+        <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" class="copy-btn"
+          style="text-decoration:none">Download</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">04</div>
+      <h2>Launch Nebula</h2>
+      <p>You have two options for launching Nebula depending on the version and your preference:</p>
+
+      <div class="alert alert-warning">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <b>Kernel Warning:</b> Using the Kernel file provides enhanced stealth but may cause <b>Blue Screening
+            (BSOD)</b> on some systems. This is not harmful to your PC, but it can be annoying.
+          <br><br>
+          <span style="color:white"><b>Recommended:</b> It is always safest and recommended to stick to
+            <b>Usermode</b>.</span>
+          <br><br>
+          <i>Note: Sometimes in newer updates, the Kernel file may not be included due to stability issues. If it's
+            missing, simply run the Usermode file.</i>
+        </div>
+      </div>
+
+      <p><strong>Option A (Stealth):</strong> Run the Kernel file first, then the Usermode file as Administrator.</p>
+      <p><strong>Option B (Safe):</strong> Just run the Usermode file as Administrator. Then follow the steps in the
+        terminal.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">05</div>
+      <h2>Launch the Game</h2>
+      <p>Finally, launch Counter-Strike 2. Ensure your display mode is set to <b>Windowed</b> or <b>Fullscreen
+          Borderless</b> for the menu to appear.</p>
+      <div class="code-block">
+        <code>Status: Setup Complete</code>
+      </div>
+    </section>
+
+    <!-- Common Issues Section -->
+    <section class="faq-section">
+      <div class="section-header">
+        <h2>Common Issues</h2>
+        <p>Encountering problems? Check these common fixes below.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Why can't I see the menu?</h4>
+        <p>This is usually caused by your game being in "Fullscreen" mode. Go to the in-game settings and select
+          <b>Windowed</b> or <b>Fullscreen Borderless</b>. The overlay cannot render over a native Fullscreen window.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h4>The application closes immediately upon opening.</h4>
+        <p>Ensure you have added an exclusion for the folder in Windows Defender. Defender often deletes or blocks the
+          files without notification.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>"VCRUNTIME140.dll" or "MSVCP140.dll" missing.</h4>
+        <p>You are missing the Visual C++ Redistributables. Please go back to <b>Step 03</b> and download the 2015-2022
+          pack.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Does this work on FACEIT ?</h4>
+        <p>No. Nebula currently does not work on FACEIT. Using it on FACEIT
+          will probaly get you VAC banned almost instantly. This might change in the future.</p>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>© 2024 Nebula Services</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

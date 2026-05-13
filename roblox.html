@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Roblox | Executor Setup Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav>
+      <div class="nav-left">
+        <img src="Images/Logo.png" alt="Nebula Logo" class="logo-img">
+        <div class="logo">Nebula Services</div>
+      </div>
+      <div>
+        <a href="https://discord.gg/H3KWyw5mBy" target="_blank" class="discord-link" style="margin-right: 15px;">
+          <img src="Images/Discord logo.png" alt="Join Discord">
+        </a>
+        <a href="index.html" class="nav-link">Back to Hub</a>
+      </div>
+    </nav>
+
+
+    <div class="hero-content">
+      <p class="tag">Tutorial</p>
+      <h1>Setting Up <span>Roblox Executor</span></h1>
+      <p>A professional, step-by-step guide to installing and using the Nebula Roblox executor.
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="#setup">Start Setup</a>
+        <a class="btn btn-secondary" href="#">Download Zip</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="setup">
+    <section class="section-header">
+      <h2>Installation Process</h2>
+      <p>Follow these steps in order to ensure your executor attaches and executes correctly.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">01</div>
+      <h2>Download & Antivirus</h2>
+      <p>Download the executor and disable your real-time protection or add an exclusion to the folder. Most executors are flagged as "False Positives" due to how they inject into the game.</p>
+      <div class="code-block">
+        <code id="release-url">https://github.com/23Pulto/Roblox-Executor/releases</code>
+        <button class="copy-btn" onclick="copyText('release-url')">Copy Link</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">02</div>
+      <h2>Launch Roblox (Web)</h2>
+      <p>Open your browser and launch a Roblox game via the website. **Note:** The Microsoft Store (UWP) version is currently not supported by most executors.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">03</div>
+      <h2>Attach Executor</h2>
+      <p>Once you are in a game, open the Nebula Executor as Administrator and click the **"Attach"** or **"Inject"** button. Wait for the confirmation message.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-num">04</div>
+      <h2>Execute Scripts</h2>
+      <p>Paste your desired script into the text editor and click **"Execute"**. Your script should now be running in the game environment.</p>
+      <div class="code-block">
+        <code>Nebula.lua (Example Script)</code>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Nebula Services</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
