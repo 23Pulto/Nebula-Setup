@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nebula Roblox | Executor Setup Guide</title>
+  <title>Nebula Roblox | External</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -26,12 +26,12 @@
 
     <div class="hero-content">
       <p class="tag">Tutorial</p>
-      <h1>Setting Up <span>Roblox Executor</span></h1>
-      <p>A professional, step-by-step guide to installing and using the Nebula Roblox executor.
+      <h1>Setting Up <span>Roblox External</span></h1>
+      <p>A professional, step-by-step guide to installing and using the Nebula Roblox external.
       </p>
       <div class="btn-group">
         <a class="btn btn-primary" href="#setup">Start Setup</a>
-        <a class="btn btn-secondary" href="#">Download Zip</a>
+        <a class="btn btn-secondary" href="#">Download</a>
       </div>
     </div>
   </header>
@@ -39,7 +39,7 @@
   <main id="setup">
     <section class="section-header">
       <h2>Installation Process</h2>
-      <p>Follow these steps in order to ensure your executor attaches and executes correctly.</p>
+      <p>Follow these steps in order to ensure your external is fully working.</p>
     </section>
 
     <section class="card">
@@ -47,7 +47,7 @@
       <h2>Download Release & Extract</h2>
       <p>Get the latest release from the official GitHub repository. Once downloaded, extract the ZIP folder to a dedicated location on your desktop or a folder of your choice.</p>
       <div class="code-block">
-        <code id="release-url">https://github.com/23Pulto/Roblox-Executor/releases</code>
+        <code id="release-url">https://github.com/23Pulto/Roblox-external/releases/tag/Updates</code>
         <button class="copy-btn" onclick="copyText('release-url')">Copy Link</button>
       </div>
     </section>
@@ -55,26 +55,26 @@
     <section class="card">
       <div class="card-num">02</div>
       <h2>Security Exclusions (Important)</h2>
-      <p>To prevent Windows Defender from deleting or blocking the executor, add the extracted folder to your Virus & Threat Protection exclusions. You can also temporarily disable real-time protection.</p>
+      <p>To prevent Windows Defender from deleting or blocking the external, add the extracted folder to your Virus & Threat Protection exclusions. You can also temporarily disable real-time protection.</p>
       <p><em>Settings > Security > Virus & threat protection > Manage settings > Add or remove exclusions.</em></p>
       <div class="alert alert-warning">
         <span class="alert-icon">⚠️</span>
         <div>
-          <b>False Positive Notice:</b> Executors are often flagged as "False Positives" due to their injection methods. Adding an exclusion ensures the files are not removed.
+          <b>False Positive Notice:</b> Externals are often flagged as "False Positives" due to their memory reading methods. Adding an exclusion ensures the files are not removed.
         </div>
       </div>
     </section>
 
     <section class="card">
       <div class="card-num">03</div>
-      <h2>Launch Roblox (Web Version)</h2>
-      <p>Open your browser and launch any Roblox game via the website. <b>Note:</b> The Microsoft Store (UWP) version is currently not supported. Make sure you are in a live game before proceeding.</p>
+      <h2>Launch Roblox</h2>
+      <p>Open Roblox and get to the home page <b>Note:</b> If you join a game while launching the external the external may crash.  Please stay on the home screen.</p>
     </section>
 
     <section class="card">
       <div class="card-num">04</div>
-      <h2>Run Executor as Admin & Inject</h2>
-      <p>Navigate to the extracted folder and locate <b>Roblox.exe</b> or <b>Nebula Services.exe</b> (depending on the release). <b>Right-click and select "Run as Administrator"</b> to launch the executor.</p>
+      <h2>Run External as Admin</h2>
+      <p>Navigate to the extracted folder and locate <b>Nebula Services.exe</b>. <b>Right-click and select "Run as Administrator"</b> to launch the External</p>
       <div class="code-block">
         <code>▶ Run "Nebula Services.exe" as Administrator</code>
       </div>
@@ -82,12 +82,12 @@
 
     <section class="card">
       <div class="card-num">05</div>
-      <h2>Wait for Initialization</h2>
-      <p>After launching the executor, <b>wait approximately 5 seconds</b> for it to fully load and attach to the Roblox process. You may see a console window or a status indicator showing that the injection was successful.</p>
+      <h2>Wait for it to load and check for updates.</h2>
+      <p>After launching the external, <b>wait approximately 5 seconds</b> for it to fully load and attach to the Roblox process.</p>
       <div class="alert alert-info">
         <span class="alert-icon">⏳</span>
         <div>
-          <b>Loading Time:</b> Be patient — the executor needs a few seconds to map its internal components. Do not close any windows during this time.
+          <b>Loading Time:</b> Be patient the external will check for updates and make sure all offsets are working.
         </div>
       </div>
     </section>
@@ -95,19 +95,18 @@
     <section class="card">
       <div class="card-num">06</div>
       <h2>Open the Menu (Insert Key)</h2>
-      <p>Once the executor has finished loading, <b>press the <kbd>Insert</kbd> key</b> on your keyboard while in the Roblox game window. The Nebula menu should appear on-screen, confirming that everything is working correctly.</p>
+      <p>Once the external has finished loading, <b>press the <kbd>Insert</kbd> key</b> on your keyboard while in the Roblox game window. The Nebula menu should appear on-screen, confirming that everything is working correctly.</p>
       <div class="code-block">
-        <code>✔️ Menu Toggle: INSERT key</code>
+        <code>Menu Toggle: INSERT key</code>
       </div>
     </section>
 
     <section class="card">
       <div class="card-num">07</div>
-      <h2>Execute Scripts & Enjoy</h2>
-      <p>With the menu open, you can paste your Lua scripts into the executor's interface and click <b>"Execute"</b> to run them. Your scripts will now function inside the Roblox environment.</p>
+      <h2>Toggles features and enjoy</h2>
+      <p>With the menu open, you can toggle all of the feauteres you want.
     </section>
 
-    <!-- Common Issues Section (identical style to CS2) -->
     <section class="faq-section">
       <div class="section-header">
         <h2>Common Issues</h2>
@@ -115,23 +114,23 @@
       </div>
 
       <div class="faq-item">
-        <h4>Executor closes immediately or file is missing.</h4>
+        <h4>External closes immediately or file is missing.</h4>
         <p>This is almost always caused by Windows Defender. Go back to <b>Step 02</b> and add the entire extracted folder to your exclusions list. Then re-extract the ZIP and try again.</p>
       </div>
 
       <div class="faq-item">
         <h4>Menu does not appear after pressing Insert.</h4>
-        <p>Ensure that you waited the full 5 seconds after running the executor. Also make sure Roblox is the active window (click on the game). If it still doesn't work, try running "Nebula Services.exe" as Administrator again.</p>
+        <p>Ensure that you waited the full 5 seconds after running the external.  Also make sure Roblox is the active window (click on the game). If it still doesn't work, try running "Nebula Services.exe" as Administrator again.</p>
       </div>
 
       <div class="faq-item">
-        <h4>"Roblox.exe" or "Nebula Services.exe" is not found.</h4>
+        <h4>"Nebula Services.exe" is not found.</h4>
         <p>Make sure you have extracted the entire ZIP folder. Some antivirus programs silently delete files. Temporarily disable real-time protection, re-extract, and add the folder to exclusions.</p>
       </div>
 
       <div class="faq-item">
-        <h4>Executor says "Attach failed" or "Injection error".</h4>
-        <p>Close Roblox and the executor completely. Re-launch Roblox first, join a game, then run the executor as Administrator. Do not run the executor before Roblox is active.</p>
+        <h4>External randomly closes.</h4>
+        <p>Leave the Roblox game and go back to home menu to relaunch the Nebula application as admininstrator again.</p>
       </div>
 
       <div class="faq-item">
