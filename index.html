@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Setup Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <!-- Ambient Falling Snow Canvas -->
+  <canvas id="snow-canvas"></canvas>
+
+  <div class="page-wrapper">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <img src="Images/logo/logo.png" alt="Nebula Logo" class="brand-logo" />
+          <span class="brand-name">Nebula Services</span>
+        </a>
+        <div class="nav-actions">
+          <a href="https://nebulaservices.site" target="_blank" rel="noopener noreferrer" class="store-nav-btn" title="Purchase a Key">
+            <svg viewBox="0 0 20 20" fill="currentColor" class="store-icon">
+              <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+            </svg>
+            <span>Buy Key</span>
+          </a>
+          <a href="https://discord.gg/H3KWyw5mBy" target="_blank" rel="noopener noreferrer" class="discord-btn" title="Join our Discord">
+            <img src="Images/logo/dc.png" alt="Discord" />
+            <span>Community</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="hero-section">
+        <h1 class="hero-title">Nebula Setup Guide</h1>
+        <p class="hero-subtitle">Select your product below to view the full installation and configuration walkthrough.</p>
+        <div class="hero-cta-wrapper">
+          <a href="https://nebulaservices.site" target="_blank" rel="noopener noreferrer" class="hero-store-pill">
+            <span class="store-pill-badge">Store</span>
+            <span class="store-pill-text">Haven't purchased a key yet? Get yours at <strong>nebulaservices.site</strong></span>
+            <svg class="store-pill-arrow" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Products Grid -->
+      <section class="products-container" id="products">
+        <div class="products-grid">
+          
+          <!-- Fortnite Card -->
+          <article class="product-card" data-product="fortnite">
+            <div class="card-media">
+              <img src="Images/guide_img/fn.png" alt="Fortnite Setup Guide" loading="lazy" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="product-meta">
+                <span class="product-tag">Overlay</span>
+              </div>
+              <h2 class="product-title">Fortnite</h2>
+              <p class="product-description">In-depth installation, overlay activation, and troubleshooting walkthrough.</p>
+              <a href="src/fortnite.html" class="guide-btn">
+                <span>Guide</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Temp Card -->
+          <article class="product-card" data-product="temp">
+            <div class="card-media">
+              <img src="Images/guide_img/temp_woof.jpg" alt="Temp Spoofer Setup Guide" loading="lazy" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="product-meta">
+                <span class="product-tag">Spoofer</span>
+              </div>
+              <h2 class="product-title">Temp Spoofer</h2>
+              <p class="product-description">Temporary HWID cleaner, system setup, and spoofing instructions.</p>
+              <a href="src/temp.html" class="guide-btn">
+                <span>Guide</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- FiveM Card -->
+          <article class="product-card" data-product="fivem">
+            <div class="card-media">
+              <img src="Images/guide_img/fivem.png" alt="FiveM Setup Guide" loading="lazy" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="product-meta">
+                <span class="product-tag">Tooling</span>
+              </div>
+              <h2 class="product-title">FiveM</h2>
+              <p class="product-description">Complete setup tutorial, dependency installation, and configuration guide.</p>
+              <a href="src/fivem.html" class="guide-btn">
+                <span>Guide</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Roblox Card -->
+          <article class="product-card" data-product="roblox">
+            <div class="card-media">
+              <img src="Images/guide_img/rblx.png" alt="Roblox Setup Guide" loading="lazy" />
+              <div class="media-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="product-meta">
+                <span class="product-tag">Utility</span>
+              </div>
+              <h2 class="product-title">Roblox</h2>
+              <p class="product-description">Step-by-step launch process, exclusions setup, and in-game controls.</p>
+              <a href="src/roblox.html" class="guide-btn">
+                <span>Guide</span>
+                <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Nebula Services. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
